@@ -1,0 +1,214 @@
+{
+  "companies": [
+    {
+      "name": { "ko": "이프엘스", "en": "IF-ELSE" },
+      "address": "http://ifelse-official.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-10-16"
+    },
+    {
+      "name": { "ko": "디앤써", "en": "D-ANSWER" },
+      "address": "http://www.d-answer.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-10-16"
+    },
+    {
+      "name": { "ko": "네이머클로딩", "en": "NAMER CLOTHING" },
+      "address": "http://namerclothing.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-10-16"
+    },
+    {
+      "name": { "ko": "인사일런스", "en": "IN SILENCE" },
+      "address": "http://insilence.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-10-18"
+    },
+    {
+      "name": { "ko": "퍼렌", "en": "PERENN" },
+      "address": "http://www.perenn.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-10-24"
+    },
+    {
+      "name": { "ko": "아람", "en": "ARAM" },
+      "address": "https://www.the-aram.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-13"
+    },
+    {
+      "name": { "ko": "아르피오", "en": "ARPIO" },
+      "address": "http://www.arpio.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-13"
+    },
+    {
+      "name": { "ko": "고낙", "en": "GONAK" },
+      "address": "https://gonak.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-13"
+    },
+    {
+      "name": { "ko": "하우트옴므", "en": "HAUT HOMME" },
+      "address": "http://hauthomme.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-26"
+    },
+    {
+      "name": { "ko": "소버먼트 바이 로모트", "en": "SOVERMENT" },
+      "address": "http://www.soverment.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-26"
+    },
+    {
+      "name": { "ko": "비바스튜디오", "en": "VIVASTUDIO" },
+      "address": "http://www.vivastudio.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-28"
+    },
+    {
+      "name": { "ko": "파츠", "en": "PARTS" },
+      "address": "http://www.partsstore.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": "2019-11-28"
+    },
+    {
+      "name": { "ko": "오르빗", "en": "ORBIT" },
+      "address": "http://www.orbitstore.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "크리드옴므", "en": "CREED HOMME" },
+      "address": "http://creedhomme.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "재미로", "en": "JMR" },
+      "address": "https://smartstore.naver.com/mangnani8585",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "비긴202", "en": "BEGIN 202" },
+      "address": "http://begin202.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "메종 드 스페로네", "en": "MAISON de SPERONE" },
+      "address": "http://sperone.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "비앙쉬르", "en": "BIENSUR" },
+      "address": "https://biensur.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "주앙 옴므", "en": "JUAN HOMME" },
+      "address": "https://smartstore.naver.com/juan_homme",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "콰시", "en": "QUACI" },
+      "address": "http://quaci.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "림림", "en": "LIMRIM" },
+      "address": "https://limrim.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "림시스", "en": "LIMSIS" },
+      "address": "http://limsis.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "밈더워드로브", "en": "MIM the wardrobe" },
+      "address": "https://mimthewardrobe.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "헥시드", "en": "HEXED" },
+      "address": "http://hexedroom.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "브랜즈", "en": "BRANS"},
+      "address": "http://www.brans.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "어반스터프", "en": "URBANSTOFF" },
+      "address": "https://www.urbanstoff.com/shop/main/index.php",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "낫앤낫", "en": "NOT AND NOT" },
+      "address": "http://notnnot.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "칠공칠", "en": "Seven-Zero-Seven" },
+      "address": "http://www.707studio.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "커먼스탠다드", "en": "COMMON STANDARD" },
+      "address": "https://common-standard.com",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    },
+    {
+      "name": { "ko": "브랜디드", "en": "BRANDED" },
+      "address": "http://brandedmall.co.kr",
+      "description": "",
+      "founded_at": "",
+      "registered_at": ""
+    }
+  ]
+}
