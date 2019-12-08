@@ -44,7 +44,7 @@ const CompanyPage: React.FC<RouteComponentProps<CompanyListProps>> = ({match}) =
   return (<div id="company-page">
     {candidates.map((candidate: CandidateType, i) => {
       if (!candidate.companies) return false;
-      return <CompanyList candidate={candidate}/>
+      return <CompanyList candidate={candidate} key={i}/>
     })}
   </div>);
 }

@@ -9,17 +9,16 @@ interface CompanyProps {
 }
 const Company: React.FC<CompanyProps> = ({company}) => {
   const language = useSelector((state: StoreState) => state.SettingsReducer.language);
-  const image = 'http://cfile208.uf.daum.net/image/11482E49510528EA173CA9'
-  const desc = '하늘에는 무덤 별 하나에 아이들의 듯합니다. 아이들의 그리고 말 무엇인지 버리었습니다. 별에도 어머니, 이름과 계집애들의 나는 거외다.';
+  // eslint-disable-next-line
   return (<a className="company" href={company.address} target="_blank">
     <div className="thumb">
-      <img src={image} alt={company.name[language]}/>
+      {company.image ? <img src={company.image} alt={company.name[language]}/> : <div className="holder"></div>}
     </div>
     <h2>
       {company.name[LANGUAGE_KOREAN]}
       <small>{company.name[LANGUAGE_ENGLISH]}</small>
     </h2>
-    <div className="description">{desc}</div>
+    <div className="description">{company.description || '설명없음'}</div>
   </a>)
 }
 

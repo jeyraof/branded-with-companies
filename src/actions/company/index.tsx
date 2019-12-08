@@ -8,6 +8,7 @@ export interface CompanyResponseItem {
   address: string,
   description: string,
   founded_at: string,
+  image: string,
   name: {
     "en": string,
     "ko": string,
