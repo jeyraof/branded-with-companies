@@ -1,0 +1,143 @@
+@import 'open-color/open-color.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+@import './variables.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  @extend %font-default;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  header {
+    position: relative;
+    @extend %clearfix;
+    
+    a.logo {
+      float: left;
+      display: block;
+      padding: ($header-height - $header-logo-height)/2 10px;
+      
+      img {
+        height: $header-logo-height;
+        display: block;
+      }
+    }
+    
+    ul.anchors {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      
+      li {
+        float: left;
+        a {
+          display: block;
+          padding: (($header-height - $header-anchor-height)/2) (($header-height - $header-anchor-height)/4);
+          img {
+            display: block;
+            width: $header-anchor-height;
+            height: $header-anchor-height;
+            border-radius: 5px;
+          }
+        }
+        
+        &:last-child a {
+          padding-right: ($header-height - $header-anchor-height)/2;
+        }
+      }
+    }
+  }
+
+  nav {
+    background: $oc-gray-8;
+    @extend %clearfix;
+    position: relative;
+    padding-left: $nav-height + 3px;
+    overflow: hidden;
+
+    a {
+      color: $oc-gray-6;
+      font-size: 1.1rem;
+      @extend %font-gothic-a1;
+    }
+    
+    .convert {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      float: left;
+      width: $nav-height;
+      height: $nav-height;
+      line-height: $nav-height;
+      text-align: center;
+
+      > div {
+        position: relative;
+
+        &::after {
+          display: block;
+          content: ' ';
+          position: absolute;
+          width: 1px;
+          height: 50%;
+          top: 25%;
+          right: -3px;
+          background: $oc-gray-7;
+        }
+      }
+    }
+
+    ul.category {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      max-height: $nav-height;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      &::-webkit-scrollbar {
+        display: none;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      li {
+        display: inline-block;
+        &.c0 {
+          display: none;
+        }
+        a {
+          display: block;
+          width: $nav-height;
+          height: $nav-height;
+          text-align: center;
+          line-height: $nav-height;
+
+          &.active {
+            color: $oc-white;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &.ko {
+      .convert .ko { color: $oc-white; }
+    }
+
+    &.en {
+      .convert .en { color: $oc-white; }
+    }
+  }
+}

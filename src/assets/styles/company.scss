@@ -1,0 +1,64 @@
+@import 'open-color/open-color.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+
+#company-page {
+  .candidate {
+    > h3 {
+      margin: 20px 0 0 0;
+      padding: 0 0 0 10px;
+      font-size: 1rem;
+    }
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      // border-top: 1px solid $oc-gray-3;
+    }
+    .company {
+      display: block;
+      padding: 10px 20px 20px 10px;
+      // border-bottom: 1px solid $oc-gray-3;
+      @extend %clearfix;
+      .thumb {
+        float: left;
+        margin: 0 10px 0 0;
+        background: pink;
+        height: 100%;
+
+        img {
+          width: 44px;
+          height: 44px;
+          border-radius: 4px;
+          display: block;;
+        }
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        @extend %font-gothic-a1;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: $oc-gray-9;
+
+        small {
+          margin-left: 5px;
+          color: $oc-gray-7;
+        }
+      }
+
+      .description {
+        margin-top: 5px;
+        color: $oc-gray-7;
+        font-size: .8rem;
+        line-height: .8rem;
+        max-height: .8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // @extend %font-gothic-a1;
+      }
+    }
+  }
+}
