@@ -12,13 +12,18 @@ const Company: React.FC<CompanyProps> = ({company}) => {
   // eslint-disable-next-line
   return (<a className="company" href={company.address} target="_blank">
     <div className="thumb">
-      {company.image ? <img src={company.image} alt={company.name[language]}/> : <div className="holder"></div>}
+      {company.image && company.image.length > 0 ? <img src={company.image} alt={company.name[language]}/> : <div className="holder"></div>}
     </div>
-    <h2>
-      {company.name[LANGUAGE_KOREAN]}
-      <small>{company.name[LANGUAGE_ENGLISH]}</small>
-    </h2>
-    <div className="description">{company.description || '설명없음'}</div>
+    <div className="metadata">
+      <h2>
+        {company.name[LANGUAGE_KOREAN]}
+        <small>{company.name[LANGUAGE_ENGLISH]}</small>
+      </h2>
+      <div className="description">{company.description || '설명없음'}</div>
+    </div>
+    <div className="favorite">
+
+    </div>
   </a>)
 }
 

@@ -23,6 +23,9 @@ export default function configureStore(): Store {
     //   AuthReducer: store.getState().AuthReducer
     // });
     saveState({
+      CompanyReducer: {
+        companies: store.getState().CompanyReducer.companies
+      },
       SettingsReducer: {
         language: store.getState().SettingsReducer.language
       }
