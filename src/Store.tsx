@@ -24,7 +24,8 @@ export default function configureStore(): Store {
     // });
     saveState({
       CompanyReducer: {
-        companies: store.getState().CompanyReducer.companies
+        companies: store.getState().CompanyReducer.companies,
+        lastFetched: store.getState().CompanyReducer.lastFetched,
       },
       SettingsReducer: {
         language: store.getState().SettingsReducer.language

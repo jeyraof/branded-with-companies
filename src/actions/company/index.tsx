@@ -26,6 +26,7 @@ const indexKorean = (name: string) => {
 
 const tuneCompany = (company: any): CompanyType => {
   return {
+    id: company.id,
     address: company.url,
     description: company.description,
     founded_at: company.founded_at,

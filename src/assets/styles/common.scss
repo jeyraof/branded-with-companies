@@ -11,6 +11,7 @@ html, body {
 
 body {
   @extend %font-default;
+  padding-top: $header-height + $nav-height;
 }
 
 a {
@@ -18,9 +19,15 @@ a {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   header {
     position: relative;
     @extend %clearfix;
+    background: $oc-white;
     
     a.logo {
       float: left;

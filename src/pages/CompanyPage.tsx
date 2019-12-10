@@ -6,7 +6,7 @@ import { StoreState } from '../reducers';
 import { changePrefix } from '../actions/settings';
 import { fetchCompanies } from '../actions/company';
 import sortBy from 'lodash/sortBy';
-import { PREFIXES } from '../constants';
+import { PREFIXES, forceCompanyRefreshEmbago } from '../constants';
 import groupBy from 'lodash/groupBy';
 import CompanyList, { CandidateType } from '../components/companies/CompanyList';
 import '../assets/styles/company.scss';
@@ -19,11 +19,16 @@ const CompanyPage: React.FC<RouteComponentProps<CompanyListProps>> = ({match}) =
   const dispatch = useDispatch();
   const { prefix } = match.params;
   const settings = useSelector((state: StoreState) => state.SettingsReducer);
-  const companies = useSelector((state: StoreState) => state.CompanyReducer.companies);
+  const companyReducer = useSelector((state: StoreState) => state.CompanyReducer);
+
+  let companies = companyReducer.companies;
+  let lastFetched = companyReducer.lastFetched;
 
   useEffect(() => {
     if ((!settings.prefix && prefix) || (settings.prefix !== prefix)) { dispatch(changePrefix(prefix)); }
-    if (!companies) dispatch(fetchCompanies());
+    if (!companies || (lastFetched && ((+new Date() - Date.parse(lastFetched)) > forceCompanyRefreshEmbago))) {
+      dispatch(fetchCompanies());
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prefix]);
 

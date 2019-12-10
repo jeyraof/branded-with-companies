@@ -3,6 +3,7 @@ import { CompanyResponseItem, FETCHED_COMPANIES, fetchCompaniesType } from '../.
 
 type CompanyActionType = (fetchCompaniesType);
 export interface CompanyType extends CompanyResponseItem {
+  id: string,
   slug: {
     "ko": string,
     "en": string
@@ -10,6 +11,7 @@ export interface CompanyType extends CompanyResponseItem {
 }
 interface CompanyStateType {
   companies?: Array<CompanyType>,
+  lastFetched?: string,
 }
 const CompanyReducer: Reducer<CompanyStateType, CompanyActionType> = (
   state = {},
@@ -19,7 +21,8 @@ const CompanyReducer: Reducer<CompanyStateType, CompanyActionType> = (
     case FETCHED_COMPANIES:
       return {
         ...state,
-        companies: action.companies
+        companies: action.companies,
+        lastFetched: (new Date()).toISOString(),
       }
     default:
       return state

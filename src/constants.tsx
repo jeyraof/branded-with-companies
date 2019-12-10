@@ -9,3 +9,6 @@ export const PREFIXES = {
   // [LANGUAGE_KOREAN]: ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'],
   [LANGUAGE_ENGLISH]: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 };
+
+export const forceCompanyRefreshEmbago = 3600 * 1000
+// export const forceCompanyRefreshEmbago = 10 * 1000
