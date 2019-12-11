@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "cd build && echo 'branded.otzil.com' > CNAME && git init && git remote add origin git@github.com:jeyraof/branded-with-companies-build.git && git add * && git commit -m \"deploy\" && git push origin master --force && cd .."
+    "deploy": "cat CNAME > build/CNAME && cd build && git init && git remote add origin git@github.com:jeyraof/branded-with-companies-build.git && git add * && git commit -m \"deploy\" && git push origin master --force && cd .."
   },
   "eslintConfig": {
     "extends": "react-app"
