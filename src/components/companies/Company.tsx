@@ -17,12 +17,9 @@ const Company: React.FC<CompanyProps> = ({company}) => {
     <div className="metadata">
       <h2>
         {company.name[LANGUAGE_KOREAN]}
-        <small>{company.name[LANGUAGE_ENGLISH]}</small>
+        <small>: {company.name[LANGUAGE_ENGLISH]}</small>
       </h2>
       <div className="description">{company.description || '설명없음'}</div>
-    </div>
-    <div className="favorite">
-
     </div>
   </a>)
 }

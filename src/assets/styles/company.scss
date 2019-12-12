@@ -1,6 +1,7 @@
 @import 'open-color/open-color.scss';
 @import './fonts.scss';
 @import './mixins.scss';
+@import './variables.scss';
 
 #company-page {
   .candidate {
@@ -17,46 +18,53 @@
     }
     .company {
       display: block;
-      padding: 10px 20px 20px 10px;
+      padding: 10px 20px 20px ($company-logo-width+20px);
       // border-bottom: 1px solid $oc-gray-3;
+      position: relative;
       @extend %clearfix;
+
       .thumb {
-        float: left;
-        margin: 0 10px 0 0;
-        height: 100%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        // float: left;
+        // margin: 0 10px 0 0;
+        // height: 100%;
 
         img {
-          width: 44px;
-          height: 44px;
-          border-radius: 4px;
-          display: block;;
+          width: $company-logo-width;
+          height: $company-logo-width;
+          border-radius: $company-logo-width/11;
+          display: block;
         }
 
         .holder {
-          width: 44px;
-          height: 44px;
-          border-radius: 4px;
-          display: block;;
+          width: $company-logo-width;
+          height: $company-logo-width;
+          border-radius: $company-logo-width/11;
+          display: block;
           background: $oc-gray-3;
         }
       }
 
       h2 {
-        margin: 0;
+        margin: 2px 0 0 0;
         padding: 0;
         @extend %font-gothic-a1;
         font-size: 0.9rem;
-        font-weight: 500;
+        font-weight: 600;
         color: $oc-gray-9;
 
         small {
-          margin-left: 5px;
+          margin-left: 3px;
           color: $oc-gray-7;
+          font-weight: 500;
         }
       }
 
       .description {
         margin-top: 5px;
+        padding-left: 1px;
         color: $oc-gray-7;
         font-size: .8rem;
         line-height: .8rem;
@@ -64,7 +72,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        // @extend %font-gothic-a1;
       }
     }
   }
