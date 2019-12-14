@@ -27,10 +27,8 @@
         position: absolute;
         left: 10px;
         top: 10px;
-        border-radius: $company-logo-width/11;
         width: $company-logo-width;
         height: $company-logo-width;
-        border: 1px solid $oc-gray-3;
 
         img {
           max-width: 100%;
@@ -43,6 +41,7 @@
           height: inherit;
           display: block;
           background: $oc-gray-3;
+          border-radius: $company-logo-width/11;
         }
       }
 
