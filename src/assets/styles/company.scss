@@ -29,11 +29,18 @@
         top: 10px;
         width: $company-logo-width;
         height: $company-logo-width;
+        white-space: nowrap;
+
+        .helper {
+          display: none;
+          height: 100%;
+          vertical-align: middle;
+        }
 
         img {
           max-width: 100%;
           max-height: 100%;
-          display: block;
+          vertical-align: middle;
         }
 
         .holder {
@@ -42,6 +49,16 @@
           display: block;
           background: $oc-gray-3;
           border-radius: $company-logo-width/11;
+        }
+
+        &.is_image {
+          .holder {
+            display: none;
+          }
+
+          .helper {
+            display: inline-block;
+          }
         }
       }
 

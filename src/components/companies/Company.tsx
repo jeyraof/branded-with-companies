@@ -11,8 +11,10 @@ const Company: React.FC<CompanyProps> = ({company}) => {
   const language = useSelector((state: StoreState) => state.SettingsReducer.language);
   // eslint-disable-next-line
   return (<a className="company" href={company.address} target="_blank">
-    <div className="thumb">
-      {company.image && company.image.length > 0 ? <img src={company.image} alt={company.name[language]}/> : <div className="holder"></div>}
+    <div className={`thumb ${company.image && company.image.length > 0 && 'is_image'}`}>
+      <div className="holder"></div>
+      <span className="helper"></span>
+      {company.image && company.image.length > 0 && <img src={company.image} alt={company.name[language]}/>}
     </div>
     <div className="metadata">
       <h2>
