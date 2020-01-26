@@ -148,4 +148,46 @@ a {
       .convert .en { color: $oc-white; }
     }
   }
+
+  .curtain {
+    background: $oc-white;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px;
+    
+    p {
+      width: 80%;
+      padding: 20px 0;
+      margin: 0 auto;
+      line-height: 20px;
+
+      a {
+        padding: 2px 5px;
+        margin: 0 5px;
+        background: $oc-orange-1;
+        color: $oc-gray-8;
+        line-height: 20px;
+        &:hover {
+          background: $oc-orange-3;
+        }
+
+        &.this {
+          background: $oc-gray-1;
+          color: $oc-gray-7;
+
+          &:hover {
+            background: $oc-gray-3;
+          }
+        }
+      }
+    }
+
+    &.true {
+      display: none;
+    }
+  }
 }
